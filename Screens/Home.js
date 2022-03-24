@@ -9,7 +9,7 @@ import RestaurantItems, {
 import allRestaurantData from "../allRestaurantData.json";
 import BottomTabs from "../Components/Home/BottomTabs";
 
-export default function Home() {
+export default function Home({ navigation }) {
   const [restaurantData, setrestaurantData] = useState(localRestaurants);
   const [activeTab, setactiveTab] = useState("Delivery");
 
@@ -36,7 +36,10 @@ export default function Home() {
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Categories />
-        <RestaurantItems restaurantData={restaurantData} />
+        <RestaurantItems
+          restaurantData={restaurantData}
+          navigation={navigation}
+        />
       </ScrollView>
       <BottomTabs />
     </SafeAreaView>

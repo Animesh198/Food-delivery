@@ -3,7 +3,7 @@
     "name": "Beachside Bar",
     "image_url": "https://static.onecms.io/wp-content/uploads/sites/9/2020/04/24/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg",
     "categories": ["Cafe", "Bar", "Delivery"],
-    "price": "$$",
+    "price": "",
     "reviews": 1244,
     "rating": 4.5
   },
@@ -26,7 +26,7 @@
   {
     "name": "Green Chilli",
     "image_url": "https://media.istockphoto.com/photos/empty-restaurant-interior-picture-id1290237592?s=612x612",
-    "categories": ["Indian", "Chineese", "Pickup"],
+    "categories": ["Indian", "Chineese", "Pickup", "Delivery"],
     "price": "$$",
     "reviews": 650,
     "rating": 4.3
@@ -34,7 +34,7 @@
   {
     "name": "Puja Rasoi",
     "image_url": "https://media.istockphoto.com/photos/interior-of-a-modern-cozy-french-restaurant-picture-id1314951233?s=612x612",
-    "categories": ["Indian", "Restro & Bar", "Pickup"],
+    "categories": ["Indian", "Restro & Bar", "Pickup", "Delivery"],
     "price": "$$",
     "reviews": 820,
     "rating": 4.7

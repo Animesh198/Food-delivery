@@ -1,11 +1,15 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 
-const image =
-  "https://static.onecms.io/wp-content/uploads/sites/9/2020/04/24/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg";
-const title = "Farmhouse Kitchen Thai Cusine";
-const description = "Thai + ComfortFood • $$ • 🎫 • 4⭐ (2912+)";
-export default function About() {
+/*const title = "Farmhouse Kitchen Thai Cusine";*/
+
+export default function About(props) {
+  const { name, image, price, reviews, rating, categories } =
+    props.route.params;
+
+  const formattedCategory = categories.map((cat) => cat).join("•");
+
+  const description = `${formattedCategory} • 🎫 • ${rating}⭐  (${reviews})`;
   return (
     <View
       style={{
@@ -14,7 +18,7 @@ export default function About() {
       }}
     >
       <RestaurantImage image={image} />
-      <RestaurantTitle title={title} />
+      <RestaurantTitle title={name} />
       <RestaurantDesc description={description} />
     </View>
   );
